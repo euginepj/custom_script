@@ -25,7 +25,7 @@ The files with file size 151kb will be listed down. Most of there files will be 
 
 
 
-
+<pre>
 <?php
    function listAllFiles($dir, $spacing = ' ') {
       # $retval = array();
@@ -35,7 +35,6 @@ The files with file size 151kb will be listed down. Most of there files will be 
       // open pointer to directory and read list of files
       $d = @dir($dir) or die("getFileList: Failed opening directory $dir for reading");
 
-      echo '<pre>';
       while (false !== ($entry = $d->read())) {
          if ($entry[0] == ".") continue;
 
@@ -67,7 +66,6 @@ The files with file size 151kb will be listed down. Most of there files will be 
                substr($spacing, 0, -1) . '/' . $entry . '/');
          }
       }
-      echo '</pre>';
       return true;
    }
 
@@ -81,3 +79,4 @@ The files with file size 151kb will be listed down. Most of there files will be 
 
    listAllFiles( getcwd() );
 ?>
+</pre>
