@@ -25,7 +25,7 @@ The files with file size 151kb will be listed down. Most of there files will be 
 
 
 
-<pre>
+<code>
 <?php
    function listAllFiles($dir, $spacing = ' ') {
       # $retval = array();
@@ -79,4 +79,4 @@ The files with file size 151kb will be listed down. Most of there files will be 
 
    listAllFiles( getcwd() );
 ?>
-</pre>
+</code>
